@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ProductList" xml:space="preserve">
+    <value>Ñuul ji</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ñuul</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Ñëw</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Lëng</value>
+  </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="AddToCart" xml:space="preserve">
+    <value>Yëg ak xëtu</value>
+  </data>
+</root>

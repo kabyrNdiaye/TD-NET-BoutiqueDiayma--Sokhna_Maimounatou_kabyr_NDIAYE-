@@ -1,8 +1,11 @@
 ﻿@using P2FixAnAppDotNetCode.Models
 @model IEnumerable<P2FixAnAppDotNetCode.Models.Product>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
 @{
     ViewData["Title"] = Localizer["ProductList"];
 }
+
+<h1>@Localizer["ProductList"]</h1>  <!-- Titre principal traduit -->
 
 <br/>
 <div id="panel-body">
@@ -20,6 +23,9 @@
                 </th>
                 <th>
                     <label>@Localizer["Stock"]</label>
+                </th>
+                <th>
+                    <label>@Localizer["AddToCart"]</label>  <!-- Colonne action pour bouton -->
                 </th>
             </tr>
         </thead>

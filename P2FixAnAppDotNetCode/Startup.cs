@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using System.Collections.Generic;
 using System.Globalization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -44,14 +46,12 @@ namespace P2FixAnAppDotNetCode
             { 
                 var supportedCultures = new List<CultureInfo>
                 {
-                    new CultureInfo("en-GB"),
-                    new CultureInfo("en-US"),
-                    new CultureInfo("en"),
-                    new CultureInfo("fr-FR"),
-                    new CultureInfo("fr"),
+                    new CultureInfo("fr-FR"),  // Français (défaut conservé)
+                    new CultureInfo("fr"),     // Français général
+                    new CultureInfo("wo-SN"),  // Wolof Sénégal (ajouté)
                 };
 
-                opts.DefaultRequestCulture = new RequestCulture("en");
+                opts.DefaultRequestCulture = new RequestCulture("fr-FR");  // Français comme défaut
                 // Formatting numbers, dates, etc.
                 opts.SupportedCultures = supportedCultures;
                 // UI strings that we have localized.
